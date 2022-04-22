@@ -1,0 +1,8 @@
+.main-content {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  padding-bottom: 60px;
+}

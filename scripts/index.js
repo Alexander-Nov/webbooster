@@ -1,5 +1,5 @@
 const popup = document.querySelector(".popup");
-const erconst= document.querySelector(".erconst");
+const erconst= document.querySelector(".popup__erconst");
 const form = document.querySelector(".popup__form");
 const buttonClosePopup = popup.querySelector(".popup__close-button");
 const buttonsAddGood = document.querySelectorAll(".item__button-add-to-cart");

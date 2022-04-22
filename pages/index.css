@@ -24,4 +24,5 @@
 @import url(../blocks/popup/__input/_active-error/popup__input_active-error.css);
 @import url(../blocks/popup/__span-error/popup__span-error.css);
 @import url(../blocks/popup/__span-error/_visible/popup__span-error_visible.css);
+@import url(../blocks/popup/__erconst/popup__erconst.css);
 

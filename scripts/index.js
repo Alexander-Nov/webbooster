@@ -1,5 +1,5 @@
 const popup = document.querySelector(".popup");
-const erconts= document.querySelector(".erconts");
+const erconst= document.querySelector(".erconst");
 const form = document.querySelector(".popup__form");
 const buttonClosePopup = popup.querySelector(".popup__close-button");
 const buttonsAddGood = document.querySelectorAll(".item__button-add-to-cart");
@@ -25,7 +25,7 @@ buttonsAddGood.forEach((button) => {
     button.addEventListener('click', (evt) => {
       inputName.value = '';
       inputTel.value = '';
-      erconts.textContent = "";
+      erconst.textContent = "";
       const goodName = evt.target.closest(".item").querySelector(".item__title").textContent;
       document.querySelector(".popup__good-name").textContent = goodName;
       openPopup(popup);
@@ -38,19 +38,19 @@ buttonsAddGood.forEach((button) => {
 
 $(document).ready(function () {
   $("#submit").click(function () {
-    $("#erconts").fadeIn(500);
+    $("#erconst").fadeIn(500);
     $.ajax({
       type: "POST",
-      url: "./scripts/send.php",
+      url: "../scripts/send.php",
       data: $("#order").serialize(),
       error: function () {
-        $("#erconts").html("Произошла ошибка!");
+        $("#erconst").html("Произошла ошибка!");
       },
       beforeSend: function () {
-        $("#erconts").html("Отправляем данные...");
+        $("#erconst").html("Отправляем данные...");
       },
       success: function (result) {
-        $("#erconts").html(result);
+        $("#erconst").html(result);
         checkThis();
       },
     });

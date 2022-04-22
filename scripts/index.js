@@ -41,7 +41,7 @@ $(document).ready(function () {
     $("#erconts").fadeIn(500);
     $.ajax({
       type: "POST",
-      url: "https://findfest.ru/webbooster/send.php",
+      url: "./scripts/send.php",
       data: $("#order").serialize(),
       error: function () {
         $("#erconts").html("Произошла ошибка!");
